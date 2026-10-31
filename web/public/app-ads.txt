@@ -1,0 +1,2 @@
+# Authorized sellers of ClearSkin AI's ad inventory (IAB app-ads.txt).
+google.com, pub-2012373535974230, DIRECT, f08c47fec0942fa0

@@ -2,12 +2,11 @@
   "name": "clearskin-site",
   "private": true,
   "type": "module",
-  "description": "clearskin site: React + Vite, built into the repo root for GitHub Pages.",
+  "description": "clearskin site: React + Vite, built into web/dist for Cloudflare Pages.",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node -e \"require('fs').rmSync('../assets',{recursive:true,force:true})\"",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --outDir .."
+    "preview": "vite preview"
   },
   "dependencies": {
     "@gsap/react": "2.1.2",

@@ -3,16 +3,17 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 
-// Builds into the repo root, which GitHub Pages serves as-is
-// (bornbrian.github.io/clearskin/). Relative base so it works under /clearskin/.
+// Builds into web/dist, which Cloudflare Pages serves at clearskinai.app
+// (root directory "web", build "npm run build", output "dist"). Relative
+// base, so the same build also works under a sub-path.
 const here = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [react()],
   base: "./",
   build: {
-    outDir: "..",
-    emptyOutDir: false,
+    outDir: "dist",
+    emptyOutDir: true,
     assetsDir: "assets",
     rollupOptions: {
       input: {
