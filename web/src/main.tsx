@@ -251,7 +251,10 @@ function Guides() {
       <div className="wrap">
         <div className="head">
           <h2 className="display">Not everything good for skin comes in a bottle.</h2>
-          <p className="lead">Food, water worked out for your body and today's weather, bedding, sleep, and what to do on a small budget. A taste:</p>
+          <p className="lead">
+            Food, water worked out for your body and today's weather, bedding, sleep, and what to do on a small budget. A taste, or{" "}
+            <a href="guides/">read the full guides</a>:
+          </p>
         </div>
         <div className="lists">
           <Rise>

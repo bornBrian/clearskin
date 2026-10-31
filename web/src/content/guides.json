@@ -1,0 +1,580 @@
+[
+ {
+  "id": "budget",
+  "title": "Great skin on a small budget",
+  "teaser": "Three cheap products do most of the work. Everything else is optional.",
+  "image": "cream_white.webp",
+  "minutes": 3,
+  "premium": false,
+  "sections": [
+   {
+    "heading": "The three that matter",
+    "avoid": false,
+    "points": [
+     {
+      "title": "A gentle cleanser",
+      "detail": "Any fragrance-free, low-foam wash. A pharmacy own-brand works as well as a premium one.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "A plain moisturiser",
+      "detail": "Look for glycerin, ceramides or petrolatum near the top of the list. A tub lasts months.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Sunscreen, SPF 30 or more",
+      "detail": "The biggest anti-mark, anti-ageing step there is. Buy the one you will wear every day.",
+      "evidence": "Strong evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Cheap swaps that work",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Petroleum jelly",
+      "detail": "A thin layer over moisturiser at night seals in water. Ideal for dry, cracked or wind-burnt skin; skip it on breakout areas.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Generic actives",
+      "detail": "Benzoyl peroxide 2.5–5%, salicylic acid 2% and adapalene 0.1% are the same molecules at any price.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Fewer products, used daily",
+      "detail": "Two steps done every day beat ten done twice a week.",
+      "evidence": "Some evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Make it last",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Pea-sized amounts",
+      "detail": "A pea of cream covers the face; a dropper of serum is too much."
+     },
+     {
+      "title": "Keep it cool and closed",
+      "detail": "Heat and light break down actives like vitamin C. Close lids tightly."
+     },
+     {
+      "title": "Scan your shelf first",
+      "detail": "Before buying, check whether something you own already does the job."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kitchen",
+  "title": "Fruits and kitchen remedies: what helps, what burns",
+  "teaser": "A few kitchen things soothe skin. Others cause burns and dark marks. Know which.",
+  "image": "botanicals.webp",
+  "minutes": 4,
+  "premium": false,
+  "sections": [
+   {
+    "heading": "Safe to put on skin",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Oats for itchy, irritated skin",
+      "detail": "Blend plain oats to a fine powder, stir into a lukewarm bath or mix with water to a paste. 10–15 minutes, rinse.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Raw honey as a mask",
+      "detail": "A thin layer on clean skin for 10–15 minutes, rinse with lukewarm water. It holds moisture and is mildly antibacterial.",
+      "evidence": "Early evidence"
+     },
+     {
+      "title": "Fresh aloe vera gel",
+      "detail": "Scoop the clear inner gel only (not the yellow sap), apply thinly after sun or irritation. Patch test first.",
+      "evidence": "Early evidence"
+     },
+     {
+      "title": "Cooled green tea compress",
+      "detail": "Brew, chill, soak a clean cloth and hold it on red or puffy areas for 10 minutes.",
+      "evidence": "Early evidence"
+     },
+     {
+      "title": "Cold cucumber or spoons for puffy eyes",
+      "detail": "The cold does the work, for an hour or so. Pleasant, not a treatment."
+     }
+    ]
+   },
+   {
+    "heading": "Never on your face",
+    "avoid": true,
+    "points": [
+     {
+      "title": "Lemon or lime juice",
+      "detail": "Acid plus sun causes burns and blotchy dark marks that last months.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Baking soda and toothpaste",
+      "detail": "Far too alkaline: they strip the barrier and leave redness worse than the spot.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Raw garlic, ginger, cinnamon",
+      "detail": "They cause chemical burns on facial skin.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Sugar, salt or coffee scrubs",
+      "detail": "Sharp grains tear the skin. Fine on rough feet, not on a face.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Undiluted vinegar",
+      "detail": "Burns. Diluted, it still does nothing an actual product does better.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Coconut oil on acne-prone skin",
+      "detail": "It clogs pores for many people. Keep it for body and hair.",
+      "evidence": "Some evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Better eaten than applied",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Vitamin C fruit daily",
+      "detail": "Guava, oranges, pawpaw, mango, pineapple, kiwi. Skin needs vitamin C to build collagen.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Tomatoes cooked with a little oil",
+      "detail": "Lycopene gives a small boost to the skin's own sun defence. It never replaces sunscreen.",
+      "evidence": "Early evidence"
+     },
+     {
+      "title": "Avocado, groundnuts, seeds, oily fish",
+      "detail": "Vitamin E and omega-3 fats support a comfortable, less inflamed barrier.",
+      "evidence": "Early evidence"
+     },
+     {
+      "title": "Watermelon, cucumber, oranges",
+      "detail": "Mostly water: they count towards your daily water."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lightening",
+  "title": "Skin-lightening creams: the hidden danger",
+  "teaser": "Many \"fairness\" creams contain mercury or steroids. They damage skin for years.",
+  "image": "cream_beige.webp",
+  "minutes": 3,
+  "premium": false,
+  "sections": [
+   {
+    "heading": "What's often inside",
+    "avoid": true,
+    "points": [
+     {
+      "title": "Mercury",
+      "detail": "Banned in cosmetics in most countries, still found in unlabelled creams. It poisons the kidneys and nerves.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Strong steroids (clobetasol, betamethasone)",
+      "detail": "They thin skin, cause stretch marks, acne and permanent darkening when stopped.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "High-strength hydroquinone without a doctor",
+      "detail": "Long use can cause ochronosis: blue-black patches that are very hard to treat.",
+      "evidence": "Strong evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Warning signs",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Fast, dramatic lightening",
+      "detail": "Real mark-fading takes 8–12 weeks. Anything faster is usually a steroid."
+     },
+     {
+      "title": "No ingredient list or a vague one",
+      "detail": "Unlabelled or \"herbal secret formula\" creams are the most likely to be contaminated."
+     },
+     {
+      "title": "Skin that gets worse when you stop",
+      "detail": "Rebound darkening and spots after stopping are classic steroid withdrawal. See a doctor.",
+      "evidence": "Strong evidence"
+     }
+    ]
+   },
+   {
+    "heading": "What fades marks safely",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Daily sunscreen first",
+      "detail": "Without it, nothing else works: sun re-darkens marks within hours.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Azelaic acid, niacinamide, vitamin C",
+      "detail": "Gentle, proven mark-faders that are safe on deeper skin tones.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Treat the cause",
+      "detail": "Fewer breakouts and no picking means fewer new marks.",
+      "evidence": "Strong evidence"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "water",
+  "title": "Water and your skin",
+  "teaser": "Enough water keeps skin from looking dull and tight. More than enough does nothing extra.",
+  "image": "water.webp",
+  "minutes": 2,
+  "premium": false,
+  "sections": [
+   {
+    "heading": "How much",
+    "avoid": false,
+    "points": [
+     {
+      "title": "About 33 ml per kg of body weight",
+      "detail": "Around 80% of that from drinks; food covers the rest. Your target is on Today.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "More on hot days and when you sweat",
+      "detail": "Add about half a litre per hour of exercise and on days over 30°C.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Pale yellow is the goal",
+      "detail": "Dark urine means drink more; completely clear means you can ease off.",
+      "evidence": "Some evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Make it easy",
+    "avoid": false,
+    "points": [
+     {
+      "title": "A glass with each routine",
+      "detail": "Morning routine, glass. Evening routine, glass. Two done before you think about it."
+     },
+     {
+      "title": "Spread it out",
+      "detail": "A glass every couple of hours beats a litre at night (and saves your sleep)."
+     },
+     {
+      "title": "Tea, milk and fruit count",
+      "detail": "Sugary drinks count as water but work against breakouts.",
+      "evidence": "Some evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Honestly",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Water is not a moisturiser",
+      "detail": "Dry, flaky skin needs a barrier cream. Drinking more won't fix it if you already drink enough.",
+      "evidence": "Some evidence"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "weather",
+  "title": "Dress your skin for the weather",
+  "teaser": "Heat, humidity, wind and sun each change what your skin needs. Adjust the routine, not just clothes.",
+  "image": "leaf_dew.webp",
+  "minutes": 3,
+  "premium": true,
+  "sections": [
+   {
+    "heading": "Hot and humid",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Lighter moisturiser",
+      "detail": "A gel or lotion instead of a thick cream; humidity already holds water in."
+     },
+     {
+      "title": "Rinse sweat quickly",
+      "detail": "Within 30 minutes of sweating, especially under caps, helmets and straps.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Water-resistant sunscreen",
+      "detail": "Reapply every two hours outside and after sweating.",
+      "evidence": "Strong evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Dry, dusty or windy",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Richer cream, sealed at night",
+      "detail": "Low humidity pulls water out of skin. A thin layer of petroleum jelly over moisturiser helps.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Cleanse gently at night",
+      "detail": "Dust and pollution sit on skin all day; one gentle cleanse removes them without stripping."
+     },
+     {
+      "title": "Fewer acids for a while",
+      "detail": "Pause exfoliating acids if skin stings in dry wind."
+     }
+    ]
+   },
+   {
+    "heading": "Sun and UV",
+    "avoid": false,
+    "points": [
+     {
+      "title": "UV 3 and above: sunscreen and shade",
+      "detail": "Clouds block little UV. The UV index on Today tells you the day's peak.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Every skin tone needs it",
+      "detail": "On deeper skin, UV darkens marks more than it burns.",
+      "evidence": "Strong evidence"
+     },
+     {
+      "title": "Hats and shade count",
+      "detail": "A wide brim cuts UV on the face by about half.",
+      "evidence": "Some evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Cold",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Lukewarm, not hot, water",
+      "detail": "Hot showers on cold days strip the barrier fast.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Lip balm and a scarf",
+      "detail": "Lips have no oil glands; wind cracks them first."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bedding",
+  "title": "Pillows, sheets, towels and phones",
+  "teaser": "Your skin spends hours pressed against fabric and screens. Keep them clean.",
+  "image": "cream_fabric.webp",
+  "minutes": 2,
+  "premium": true,
+  "sections": [
+   {
+    "heading": "How often",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Pillowcase: every 2–3 nights if you break out",
+      "detail": "Weekly otherwise. Flip it in between for a clean side.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Sheets: weekly",
+      "detail": "Hot wash kills mites and bacteria; dry fully in sun or a dryer."
+     },
+     {
+      "title": "Face towel: your own, every 2–3 uses",
+      "detail": "Pat, don't rub. A damp shared towel spreads bacteria.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Makeup brushes and sponges: weekly",
+      "detail": "Mild soap, rinse, dry flat.",
+      "evidence": "Some evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Everyday contact",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Wipe your phone daily",
+      "detail": "It touches your cheek and jaw on every call. An alcohol wipe or a damp cloth with soap."
+     },
+     {
+      "title": "Hair oil and pomade off the forehead",
+      "detail": "Oily hair products clog pores along the hairline. Wash your face after applying them.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Fragrance-free laundry if you're sensitive",
+      "detail": "Fabric softener and scented detergent are common hidden irritants.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Satin or silk is optional",
+      "detail": "Smoother on skin and hair, but a clean cotton case does the main job.",
+      "evidence": "Early evidence"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "food",
+  "title": "Eating for clearer skin",
+  "teaser": "A few food patterns are linked to breakouts and redness. Test them on yourself for four weeks.",
+  "image": "leaf_shadow.webp",
+  "minutes": 3,
+  "premium": true,
+  "sections": [
+   {
+    "heading": "Linked to breakouts",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Sugary drinks and white carbs",
+      "detail": "Fast-digesting sugar spikes hormones that drive oil. Swap soda and juice for water and whole grains.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Milk, especially skimmed",
+      "detail": "Some people break out more on dairy. Try four weeks without and compare your scans.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Whey protein shakes",
+      "detail": "A common trigger for jawline and back acne in gym-goers.",
+      "evidence": "Some evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Linked to redness",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Alcohol, hot drinks, spicy food",
+      "detail": "Classic flush triggers. Log them in check-ins to see which are yours.",
+      "evidence": "Some evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Good for skin",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Oily fish, beans, nuts and seeds",
+      "detail": "Omega-3 fats and zinc calm inflammation.",
+      "evidence": "Early evidence"
+     },
+     {
+      "title": "Colourful fruit and vegetables",
+      "detail": "Vitamin C and antioxidants help skin repair.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Chocolate, honestly",
+      "detail": "The evidence is weak. If it's dark and low in sugar, don't worry about it.",
+      "evidence": "Early evidence"
+     }
+    ]
+   },
+   {
+    "heading": "How to test",
+    "avoid": false,
+    "points": [
+     {
+      "title": "One change at a time, four weeks",
+      "detail": "Skin turns over in about a month. Change one thing, scan weekly, compare."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sleep_stress",
+  "title": "Sleep, stress and exercise",
+  "teaser": "Stress hormones raise oil and slow repair. The basics show up in your scans.",
+  "image": "warm_shadow.webp",
+  "minutes": 2,
+  "premium": true,
+  "sections": [
+   {
+    "heading": "Sleep",
+    "avoid": false,
+    "points": [
+     {
+      "title": "7–9 hours",
+      "detail": "Skin repairs overnight; short sleep shows as dullness and dark circles.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Same side, clean case",
+      "detail": "If breakouts sit on one cheek, it's often the side you sleep on."
+     }
+    ]
+   },
+   {
+    "heading": "Stress",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Expect flares in stressful weeks",
+      "detail": "Exams and deadlines raise cortisol and oil. Keep the routine simple then, don't add new actives.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Ten minutes a day",
+      "detail": "A walk, breathing or prayer: anything that lowers stress shows up within weeks.",
+      "evidence": "Early evidence"
+     }
+    ]
+   },
+   {
+    "heading": "Exercise",
+    "avoid": false,
+    "points": [
+     {
+      "title": "Sweat is fine, leaving it isn't",
+      "detail": "Rinse or cleanse within 30 minutes and change out of damp clothes.",
+      "evidence": "Some evidence"
+     },
+     {
+      "title": "Sunscreen for outdoor training",
+      "detail": "Water-resistant, reapplied every two hours.",
+      "evidence": "Strong evidence"
+     }
+    ]
+   }
+  ]
+ }
+]

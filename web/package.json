@@ -5,7 +5,7 @@
   "description": "clearskin site: React + Vite, built into web/dist for Cloudflare Pages.",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build && node scripts/seo.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
