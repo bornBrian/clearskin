@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 /** The listing, once it's live (the package name is fixed). */
 export const PLAY_URL = "https://play.google.com/store/apps/details?id=com.clearskinai.app";
-export const EMAIL = "britech.apps@gmail.com";
+export const EMAIL = "support@britechapps.com";
 
 /** Lenis smooth scrolling driven by GSAP's ticker, so ScrollTrigger and the
  *  page move as one. Off for people who ask for less motion. */
@@ -97,7 +97,9 @@ export function Footer() {
   return (
     <footer>
       <div className="wrap">
-        <span className="grow">© 2026 Bri Technologies · Cosmetic guidance, not medical advice.</span>
+        <span className="grow">
+          © 2026 <a href="https://britechapps.com">Bri Technologies</a> · Cosmetic guidance, not medical advice.
+        </span>
         <a href="privacy.html">Privacy policy</a>
         <a href="terms.html">Terms of use</a>
         <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
