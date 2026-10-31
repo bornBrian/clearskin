@@ -1,4 +1,4 @@
-import{l as n,j as e,r,n as t,N as o,F as a}from"./styles-B6KC1Ssy.js";const s=`<h1>Privacy policy</h1>\r
+import{l as n,j as e,r,n as t,N as o,F as a}from"./styles-CxTfzXBh.js";const s=`<h1>Privacy policy</h1>\r
     <p class="muted">Last updated 29 October 2026</p>\r
 \r
     <p>The ClearSkin AI mobile app is made by Bri Technologies (Born Mugisha Brian, Tanzania), “we” in this policy. It explains what we process, why, and the choices you have.</p>\r

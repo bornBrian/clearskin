@@ -53,10 +53,7 @@ function Hero() {
     <header className="hero">
       <div className="wrap">
         <div>
-          <motion.div className="eyebrow" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 0.8 }}>
-            Skin analysis for every skin tone
-          </motion.div>
-          <h1 className="display" style={{ marginTop: 22 }}>
+          <h1 className="display">
             <SplitText text="Your skin," tag="span" splitType="chars" effect="rise" mask trigger="load" delay={30} duration={1.1} textAlign="left" />
             <br />
             <span className="accent">
@@ -82,15 +79,20 @@ function Hero() {
   );
 }
 
-const MEASURES = ["Blemishes", "Texture", "Pores", "Redness", "Even tone", "Hydration", "Oil balance", "Smoothness", "Under-eyes"];
+const READING = [
+  ["Blemishes", 64], ["Texture", 72], ["Pores", 70], ["Redness", 82], ["Even tone", 67],
+  ["Hydration", 80], ["Oil balance", 74], ["Smoothness", 92], ["Under-eyes", 77],
+] as const;
 
+/** One real reading running past: what a scan actually returns. */
 function Marquee() {
   return (
-    <div className="marquee" aria-label={`Measures: ${MEASURES.join(", ")}`}>
-      <InfiniteSlider gap={40} speed={38} speedOnHover={14}>
-        {MEASURES.map((m) => (
+    <div className="marquee" aria-label="An example scan's nine readings">
+      <InfiniteSlider gap={56} speed={34} speedOnHover={12}>
+        {READING.map(([m, v]) => (
           <div className="item" key={m} aria-hidden>
-            {m}
+            <span>{m}</span>
+            <span className="num">{v}</span>
             <span className="tick" />
           </div>
         ))}
@@ -143,10 +145,9 @@ function Story() {
   return (
     <section className="block story" id="how">
       <div className="wrap">
-        <div className="head" style={{ marginBottom: 0 }}>
-          <div className="eyebrow">How it works</div>
+        <div className="head story-head">
           <h2 className="display">
-            <SplitText text="Six things it does." tag="span" splitType="words" effect="rise" mask textAlign="left" />
+            <SplitText text="After you open it." tag="span" splitType="words" effect="rise" mask textAlign="left" />
           </h2>
         </div>
       </div>
@@ -178,7 +179,7 @@ function Story() {
           <Rise key={s.video}>
             <div className="card">
               <video src={media(`${s.video}.mp4`)} poster={media(`${s.video}.jpg`)} autoPlay muted loop playsInline preload="metadata" />
-              <div className="eyebrow">{String(i + 1).padStart(2, "0")}</div>
+              <div className="n">{String(i + 1).padStart(2, "0")}</div>
               <h3>{s.title}</h3>
               <p>{s.text}</p>
             </div>
@@ -200,8 +201,7 @@ function Nine() {
     <section className="block" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div className="head">
-          <div className="eyebrow">The report</div>
-          <h2 className="display">Nine measurements, in plain words.</h2>
+          <h2 className="display">Nine readings, in plain words.</h2>
           <p className="lead">Out of 100, higher is better, lowest first. Each one comes with what it means and what to do about it.</p>
         </div>
         <div className="grid9">
@@ -224,7 +224,6 @@ function Statement() {
   return (
     <section className="block statement">
       <div className="wrap">
-        <div className="eyebrow" style={{ marginBottom: 28 }}>Why the scan comes first</div>
         <ScrollReveal baseOpacity={0.12} enableBlur blurStrength={6} baseRotation={0} textClassName="scroll-reveal-text">
           Answers alone can't tell acne from irritation, or dry skin from dehydrated skin. So ClearSkin looks first, from every side, and only then builds your routine. Nothing in it is a guess.
         </ScrollReveal>
@@ -251,8 +250,7 @@ function Guides() {
     <section className="block" id="guides">
       <div className="wrap">
         <div className="head">
-          <div className="eyebrow">Guides</div>
-          <h2 className="display">Help that doesn't cost a thing.</h2>
+          <h2 className="display">Not everything good for skin comes in a bottle.</h2>
           <p className="lead">Food, water worked out for your body and today's weather, bedding, sleep, and what to do on a small budget. A taste:</p>
         </div>
         <div className="lists">
@@ -287,75 +285,61 @@ function Guides() {
 }
 
 function Privacy() {
-  const points = [
-    ["On your phone", "Scan photos are saved only on your phone. Export or delete everything from Settings."],
-    ["Never stored by us", "Photos are sent encrypted for analysis, processed in real time and discarded. Location data is stripped first."],
-    ["Never for training", "Your photos are never used to train AI, sold, or shown to advertisers."],
-  ];
   return (
     <section className="block" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div className="head">
-          <div className="eyebrow">Privacy</div>
-          <h2 className="display">Your photos stay yours.</h2>
+          <h2 className="display">Your photos stay on your phone.</h2>
+          <p className="lead">
+            They're sent encrypted only to be analysed, processed in real time and thrown away, with location data stripped first. Never stored on our servers, never sold, never used to train AI. Export or delete everything from Settings, any time.{" "}
+            <a href="privacy.html">The privacy policy</a> has the detail.
+          </p>
         </div>
-        <div className="points">
-          {points.map(([t, d], i) => (
-            <Rise key={t} delay={i * 0.08}>
-              <div className="row">
-                <div>
-                  <b>{t}</b>
-                  <span>{d}</span>
-                </div>
-              </div>
-            </Rise>
-          ))}
-        </div>
-        <p className="fine">
-          Read the full <a href="privacy.html">privacy policy</a>.
-        </p>
       </div>
     </section>
   );
 }
+
+const PLAN_ROWS = [
+  ["Skin scans", "2 every 30 days", "As often as you like"],
+  ["Routine, reminders, streaks", "Included", "Included"],
+  ["Water target, safety guides", "Included", "Included"],
+  ["Every guide", "", "Included"],
+  ["Skin coach", "", "Included"],
+  ["Full progress history, before and after", "", "Included"],
+  ["Ads", "Yes", "None"],
+];
 
 function Plans() {
   return (
     <section className="block" id="pricing" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div className="head">
-          <div className="eyebrow">Plans</div>
-          <h2 className="display">Start free.</h2>
+          <h2 className="display">Free to start. $4.99 when you want everything.</h2>
         </div>
-        <div className="plans">
-          <Rise>
-            <div className="plan">
-              <div className="eyebrow">Free</div>
-              <div className="price">$0</div>
-              <div className="per">forever</div>
-              <ul>
-                <li>2 skin scans every 30 days</li>
-                <li>Your routine, reminders and streaks</li>
-                <li>Water target and the safety guides</li>
-                <li>With ads</li>
-              </ul>
-            </div>
-          </Rise>
-          <Rise delay={0.08}>
-            <div className="plan dark">
-              <div className="eyebrow" style={{ color: "rgba(243,230,202,.6)" }}>Premium</div>
-              <div className="price">$4.99</div>
-              <div className="per">a month, or $29.99 a year</div>
-              <ul>
-                <li>Scan as often as you like (fair use)</li>
-                <li>Your skin coach, every guide, full progress history</li>
-                <li>Before-and-after comparisons</li>
-                <li>No ads</li>
-              </ul>
-            </div>
-          </Rise>
-        </div>
-        <p className="fine">Billed through Google Play in your local currency. Cancel anytime in Google Play.</p>
+        <Rise>
+          <table className="plan-table">
+            <thead>
+              <tr>
+                <th />
+                <th>Free</th>
+                <th>
+                  Premium <span>$4.99 a month or $29.99 a year</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {PLAN_ROWS.map(([k, a, b]) => (
+                <tr key={k}>
+                  <td>{k}</td>
+                  <td>{a || <span className="none">·</span>}</td>
+                  <td>{b}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </Rise>
+        <p className="fine">Billed through Google Play in your local currency. Cancel any time in Google Play. Premium scans are fair-use.</p>
       </div>
     </section>
   );
