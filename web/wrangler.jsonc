@@ -1,0 +1,11 @@
+// Cloudflare Workers Builds: after `npm run build`, `npx wrangler deploy`
+// serves the built site in dist/ as static files (with dist/_headers).
+{
+  "name": "clearskin",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}
