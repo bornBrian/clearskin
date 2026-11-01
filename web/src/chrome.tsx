@@ -144,7 +144,7 @@ export function Footer() {
             <a href="https://britechapps.com">Bri Technologies</a>
           </div>
         </div>
-        <p className="foot-legal">© 2026 Bri Technologies. Dodoma, Tanzania.</p>
+        <p className="foot-legal">© 2026 Bri Technologies.</p>
       </div>
     </footer>
   );
