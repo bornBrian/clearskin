@@ -8,7 +8,7 @@ import markSvg from "../public/media/mark.svg?raw";
 gsap.registerPlugin(ScrollTrigger);
 
 /** The listing, once it's live (the package name is fixed). */
-export const PLAY_URL = "https://play.google.com/store/apps/details?id=com.clearskinai.app";
+export const PLAY_URL = "https://play.google.com/store/apps/details?id=com.clearskinai.app&referrer=utm_source%3Dclearskin_site%26utm_medium%3Dwebsite";
 export const EMAIL = "support@britechapps.com";
 export const still = () => typeof window !== "undefined" && matchMedia("(prefers-reduced-motion: reduce)").matches;
 

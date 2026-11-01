@@ -13,7 +13,7 @@ const web = resolve(here, "..");
 const dist = resolve(web, "dist");
 const SITE = "https://clearskin.britechapps.com";
 const COMPANY = "https://britechapps.com";
-const PLAY = "https://play.google.com/store/apps/details?id=com.clearskinai.app";
+const PLAY = "https://play.google.com/store/apps/details?id=com.clearskinai.app&referrer=utm_source%3Dclearskin_guides%26utm_medium%3Dwebsite";
 const guides = JSON.parse(readFileSync(resolve(web, "src/content/guides.json"), "utf8"));
 const today = new Date().toISOString().slice(0, 10);
 
