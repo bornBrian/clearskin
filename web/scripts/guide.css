@@ -1,12 +1,12 @@
 /* Guide articles: the site's paper, ink and leaf, light display weights and
    hairlines, without the React app. Copied to dist/guides by seo.mjs. */
 :root {
-  --bg: #eef2ed;
-  --ink: #151a17;
-  --muted: #59625c;
-  --faint: #8a928c;
+  --bg: #ffffff;
+  --ink: #1d1d1f;
+  --muted: #6e6e73;
+  --faint: #86868b;
   --line: rgba(21, 26, 23, 0.12);
-  --leaf: #3f8f5a;
+  --leaf: #2c7a4b;
   --warn: #a4442f;
   --gutter: clamp(20px, 5vw, 72px);
 }
@@ -16,7 +16,8 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.011em;
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -26,25 +27,25 @@ img { display: block; max-width: 100%; }
 :focus-visible { outline: 2px solid var(--leaf); outline-offset: 3px; border-radius: 4px; }
 .wrap { width: min(1240px, 100% - 2 * var(--gutter)); margin-inline: auto; }
 
-.top { display: flex; align-items: center; gap: 28px; height: 72px; }
-.mark { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 22px; font-weight: 300; letter-spacing: -0.03em; margin-right: auto; }
-.top nav { display: flex; gap: 24px; font-size: 15px; color: var(--muted); }
+.top { display: flex; align-items: center; gap: 28px; height: 52px; border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+.mark { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 19px; font-weight: 600; letter-spacing: -0.02em; margin-right: auto; }
+.top nav { display: flex; gap: 24px; font-size: 12.5px; color: var(--muted); }
 .top nav a { text-decoration: none; }
 .top nav a:hover { color: var(--ink); }
-.get { text-decoration: none; font-size: 15px; font-weight: 500; background: var(--ink); color: var(--bg); padding: 10px 18px; border-radius: 999px; }
+.get { text-decoration: none; font-size: 12.5px; font-weight: 500; background: var(--ink); color: #fff; padding: 6px 14px; border-radius: 999px; }
 @media (max-width: 640px) { .top nav { display: none; } }
 
 .guide { max-width: 760px; padding: clamp(40px, 9vh, 96px) 0 96px; }
 .crumbs { margin: 0 0 28px; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--faint); }
 .crumbs a { text-decoration: none; color: var(--muted); }
 .crumbs a:hover { color: var(--ink); }
-h1 { margin: 0; font-size: clamp(40px, 6.4vw, 76px); font-weight: 300; letter-spacing: -0.045em; line-height: 1.02; }
+h1 { margin: 0; font-size: clamp(40px, 6.4vw, 72px); font-weight: 700; letter-spacing: -0.045em; line-height: 1.04; }
 .lead { margin: 24px 0 0; font-size: clamp(18px, 1.6vw, 22px); color: var(--muted); }
 .meta { margin: 16px 0 0; font-size: 14px; color: var(--faint); }
 .photo { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 20px; margin: 44px 0 16px; }
 
 .part { padding-top: 40px; }
-.part h2 { margin: 0 0 8px; font-size: clamp(24px, 2.6vw, 32px); font-weight: 400; letter-spacing: -0.03em; }
+.part h2 { margin: 0 0 8px; font-size: clamp(24px, 2.6vw, 32px); font-weight: 600; letter-spacing: -0.03em; }
 .part ol { list-style: none; margin: 0; padding: 0; counter-reset: p; }
 .part li { counter-increment: p; position: relative; padding: 20px 0 20px 52px; border-bottom: 1px solid var(--line); }
 .part li::before { content: counter(p, decimal-leading-zero); position: absolute; left: 0; top: 23px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: var(--leaf); }
@@ -60,14 +61,14 @@ h1 { margin: 0; font-size: clamp(40px, 6.4vw, 76px); font-weight: 300; letter-sp
 .more { margin-top: 72px; }
 .more h2 { margin: 0 0 8px; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
 .more a { display: block; padding: 18px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
-.more b, .card b { display: block; font-weight: 500; font-size: 18px; letter-spacing: -0.01em; }
+.more b, .card b { display: block; font-weight: 600; font-size: 18px; letter-spacing: -0.01em; }
 .more span, .card span { color: var(--muted); }
 .more a:hover b, .card:hover b { color: var(--leaf); }
 
 .guide:has(.cards) { max-width: 1240px; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 40px 28px; margin-top: 56px; }
 .card { text-decoration: none; display: flex; flex-direction: column; gap: 6px; }
-.card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; margin-bottom: 10px; }
+.card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 22px; margin-bottom: 10px; }
 .card i { font-style: normal; font-size: 13.5px; color: var(--faint); }
 
 footer { display: flex; flex-wrap: wrap; gap: 8px 24px; border-top: 1px solid var(--line); padding: 28px 0 48px; font-size: 14px; color: var(--muted); }

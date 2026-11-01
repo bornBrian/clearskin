@@ -61,13 +61,13 @@ function page({ path, title, description, image, body, data }) {
 <link rel="icon" href="../favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="guide.css">
 ${ld(data)}
 </head>
 <body>
 <header class="wrap top">
-  <a class="mark" href="../"><img src="../media/mark.svg" width="26" height="26" alt="">clearskin</a>
+  <a class="mark" href="../"><img src="../media/mark.svg" width="26" height="26" alt="">ClearSkin AI</a>
   <nav aria-label="Sections"><a href="./">Guides</a><a href="../#how">How it works</a></nav>
   <a class="get" href="${PLAY}">Get the app</a>
 </header>
@@ -219,7 +219,7 @@ const homeFile = resolve(dist, "index.html");
 let home = readFileSync(homeFile, "utf8");
 if (!home.includes('rel="canonical"')) {
   home = home
-    .replace('content="media/hero.jpg"', `content="${SITE}/media/hero.jpg"`)
+    .replace('content="media/og.jpg"', `content="${SITE}/media/og.jpg"`)
     .replace(
       "</head>",
       `<link rel="canonical" href="${SITE}/">\n<meta property="og:url" content="${SITE}/">\n<meta name="twitter:card" content="summary_large_image">\n${ld({

@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { Footer, Nav, useSmoothScroll } from "./shell";
+import { Footer, LocalNav, useSmoothScroll } from "./chrome";
 import privacy from "./content/privacy.html?raw";
 import terms from "./content/terms.html?raw";
 import "./styles.css";
@@ -14,7 +14,7 @@ function Legal() {
   useSmoothScroll();
   return (
     <>
-      <Nav home={false} />
+      <LocalNav home={false} />
       <main className="legal">
         <div className="wrap">
           <article dangerouslySetInnerHTML={{ __html: page }} />
