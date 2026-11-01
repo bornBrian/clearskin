@@ -20,7 +20,6 @@
         <tr><td>Face photos (front, and left and right side views)</td><td>Front photo: your phone. All photos: sent in transit for analysis, never stored on our servers</td><td>Skin analysis</td></tr>
         <tr><td>Issues you point out before a scan, such as dryness or redness</td><td>Sent with the analysis request</td><td>Focusing the analysis</td></tr>
         <tr><td>Skin profile: skin type, concerns, age range, optional skin tone, pregnancy status, shaving</td><td>Your phone; the relevant parts are sent with analysis and coach requests</td><td>A personal analysis and routine</td></tr>
-        <tr><td>Skin measurements your phone takes from a scan photo (numbers such as how much of the skin reads red or shiny), only when the full analysis can't be reached</td><td>Your phone; the numbers, never the photo, are sent to Google Gemini for a written explanation and not stored</td><td>Explaining a scan measured on your phone</td></tr>
         <tr><td>Check-ins, products, routine logs, coach chats</td><td>Your phone; coach requests include a short summary</td><td>Insights and coaching</td></tr>
         <tr><td>Account: email address; with Google sign-in also your name and profile picture link</td><td>Our backend (Supabase, Ireland)</td><td>Signing in, keeping Premium on any phone</td></tr>
         <tr><td>Device fraud-prevention ID: a one-way hash of the app’s Android ID</td><td>Our backend, with usage counters</td><td>Stopping abuse of free scans. Never linked to advertising</td></tr>
@@ -56,7 +55,7 @@
     <ul>
       <li><strong>Anthropic</strong>: AI analysis of scan photos and coach questions. Anthropic does not train its models on this data and keeps it only for a limited time for safety monitoring, under its commercial terms.</li>
       <li><strong>Supabase</strong> (Ireland): accounts, usage counters and rewarded-video credits.</li>
-      <li><strong>Google</strong>: Google sign-in, sign-in code emails, Google Play Integrity checks, and Google Gemini, which writes some coach answers and explanations of phone-measured scans, checking them against Google Search. Gemini receives text only, never your photos, under Google’s paid-service terms, which don’t allow training on it.</li>
+      <li><strong>Google</strong>: Google sign-in, sign-in code emails, and Google Play Integrity checks.</li>
       <li><strong>Google Play</strong> and <strong>RevenueCat</strong>: payments and subscription status.</li>
       <li><strong>Google AdMob</strong>, with its partners <strong>AppLovin</strong>, <strong>Meta Audience Network</strong> and <strong>Unity Ads</strong>: ads for free users.</li>
       <li><strong>Open-Meteo</strong>: weather for the city you choose.</li>
