@@ -230,7 +230,7 @@ if (!home.includes('rel="canonical"')) {
   writeFileSync(homeFile, home);
 }
 
-const urls = ["", "guides/", ...guides.map((g) => `guides/${g.id}.html`), "privacy.html", "terms.html"];
+const urls = ["", "guides/", ...guides.map((g) => `guides/${g.id}.html`), "privacy.html", "terms.html", "delete-account.html"];
 writeFileSync(
   resolve(dist, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls

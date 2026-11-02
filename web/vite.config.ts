@@ -20,6 +20,7 @@ export default defineConfig({
         index: resolve(here, "index.html"),
         privacy: resolve(here, "privacy.html"),
         terms: resolve(here, "terms.html"),
+        delete: resolve(here, "delete-account.html"),
       },
     },
   },

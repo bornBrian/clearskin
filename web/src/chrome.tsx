@@ -136,6 +136,7 @@ export function Footer() {
             <a href={PLAY_URL}>Get it on Google Play</a>
             <a href="privacy.html">Privacy policy</a>
             <a href="terms.html">Terms of use</a>
+            <a href="delete-account.html">Delete your account</a>
           </div>
           <div>
             <h3>Contact</h3>
